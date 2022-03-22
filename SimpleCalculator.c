@@ -7,9 +7,11 @@ int main(void)
     double num2;
     double answer;
 
+    //Prompt user input for operator
     printf("\nEnter an operator (+ - * /): ");
-    scanf("%c", &operator); //Prompt user input for operator
-    //Check if operator is valid
+    scanf("%c", &operator);
+
+    //Check operator validity
     if (operator == '+' || operator == '-' || operator == '*' || operator == '/' 
     )
     {   //If operator is valid, ask for user input
@@ -18,7 +20,8 @@ int main(void)
 
         printf("Enter number 2: ");
         scanf("%lf", &num2);
-        //Proceed calculating answer according to given operator
+
+        //Calculate according to operator
         switch (operator)
         {
             case '+':
@@ -40,7 +43,7 @@ int main(void)
         }
     }
     else    
-    {   //Inform user that operator is invalid
+    {
         printf("\n%c is not a valid operator", operator);
     }
     return 0;
