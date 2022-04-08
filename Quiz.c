@@ -7,7 +7,7 @@ int main(void)
     char questions[][100] = {"1. What is the closest star to our planet?: ",
                              "2. How many days in a year?: ",
                              "3. Which country does K-Pop originated?: ",
-                             "4. Who is the considered as the father of Astronomy?: ",
+                             "4. Who is considered as the father of Astronomy?: ",
                              "5. Fill-in the blank: It is raining ____ today"};
     
     char options[][100] = {"A. Moon", "B. Sun", "C. Venus", "D. Polaris",
