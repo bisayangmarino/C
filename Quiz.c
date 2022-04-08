@@ -19,7 +19,7 @@ int main(void)
     char answers[5] = {'B', 'A', 'B', 'C', 'C'};
     int numberOfQuestions = sizeof(questions)/sizeof(questions[0]);
 
-    char guess;
+    char guess, ch;
     int score = 0;
 
     printf("********QUIZ GAME*********\n");
@@ -34,7 +34,7 @@ int main(void)
 
         printf("Your choice: ");
         scanf("%c", &guess);
-        while ((getchar()) != '\n'); // Clear \n from input buffer
+        while ((ch = getchar()) != '\n' && ch != EOF); // Clear \n from input buffer
 
         guess = toupper(guess);
 
